@@ -1,0 +1,15 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+}
+
+#tooltip {
+    position: absolute;
+    visibility: hidden;
+    background: lightgray;
+    padding: 5px;
+    border: 1px solid black;
+}
