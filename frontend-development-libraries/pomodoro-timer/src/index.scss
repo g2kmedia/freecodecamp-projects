@@ -1,0 +1,26 @@
+@import url('https://fonts.googleapis.com/css2?family=Goldman:wght@400;700&family=Orbitron:wght@400..900&display=swap');
+
+$bg-color: #FF6B6B;
+$txt-color: #F7FFF7;
+
+body {
+  min-height: 80vh;
+  padding: 20px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-family: "Goldman", sans-serif;
+  font-size: 30px;
+  background: $bg-color;
+  color: $txt-color;
+}
+
+h1 {
+  font-size: clamp(30px, 8vw, 50px);
+  width: min(650px, 90vw);
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+  font-size: 50px;
+  text-align: center;
+}

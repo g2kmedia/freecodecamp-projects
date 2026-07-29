@@ -1,0 +1,220 @@
+#calculator-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  min-width: 900px;
+  height: 100vh;
+}
+
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+}
+
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+input:checked + .slider {
+  background-color: #2196F3;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #2196F3;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}
+
+#calculator {
+  width: 348px;
+}
+
+#preview {
+  text-align: right;
+  padding: 10px;
+  background: rgba(0, 0, 0, 0.4);
+  min-height: 80px;
+}
+
+#formula-preview {
+  font-size: 20px;
+  color: rgba(254, 162, 46, 0.5);
+  font-style: italic;
+  min-height: 25px;
+  width: 300px;
+  overflow: auto;
+}
+
+#display {
+  padding-top: 15px;
+  color: rgb(255, 255, 255, 0.9);
+  min-height: 45px;
+  width: 300px;
+  overflow: auto;
+}
+
+#inputs {
+  display: flex;
+  flex-direction: columns;
+}
+
+button {
+  padding: 35px;
+  background: rgba(0, 0, 0, 0.15);
+  border: 1px solid rgba(0, 0, 0, 0.15);
+}
+
+button:hover {
+  background: rgba(0, 0, 0, 0.05);
+  cursor: pointer;
+}
+
+.number-buttons {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+#zero {
+  grid-column: span 2;
+}
+
+.operation-buttons {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  background: rgba(150, 155, 177, 0.3);
+  width: 100%;
+}
+
+.operation-buttons > button:hover {
+  background: rgba(150, 155, 177);
+}
+
+.function-buttons {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+#clear {
+  background: rgba(221, 52, 73, 0.3);
+}
+
+#clear:hover {
+  background: rgba(221, 52, 73);
+}
+
+#equals {
+  background: rgba(254, 162, 46, 0.3);
+}
+
+#equals:hover {
+  background: rgba(254, 162, 46);
+}
+
+#info-config {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 60px;
+}
+
+#info-button {
+  padding: 10px;
+  margin: 20px;
+}
+
+#infobox {
+  background: rgba(255, 255, 255);;
+  position: fixed;
+  top: 10px;
+  right: 10px;;
+  width: 600px;
+  height: 550px;
+  text-align: right;
+}
+
+#close-button {
+  padding: 0px;
+  background: none;
+  border: none;
+  margin: 15px;
+}
+
+#info-text {
+  text-align: center;
+}
+
+#info-text > h1 {
+  padding: 5px;
+}
+
+#info-text > h2 {
+  font-size: 20px;
+  padding: 5px;
+}
+
+ul {
+  list-style-type: disc;
+  list-style-position: inside;
+  text-align: left;
+  padding-left: 60px;
+  padding-right: 25px;
+}
+
+ul > ul {
+  padding-left: 25px;
+  padding-bottom: 10px;
+}
+
+ul > li,
+li > div {
+  font-size: 15px;
+  font-weight: normal;
+  margin-top: 5px;
+}
+
+li > div {
+  border: 1px solid black;
+}
+
+li > b {
+  font-size: 15px;
+}
+
+#toggle > span {
+  font-size: 18px;
+  padding: 5px;
+}

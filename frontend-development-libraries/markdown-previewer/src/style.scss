@@ -1,0 +1,128 @@
+$desktop: #4DBBBB;
+$window: #E0E0E0;
+$window-title-bar: linear-gradient(to right, #A4C8E1, #7BB3D0);
+$font-text: Consolas, "Courier New", monospace;
+$font-title: "Comic Sans MS", "Comic Sans", cursive;
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  background-color: $desktop;
+}
+
+body {
+  >* {
+    margin: 10px;
+  }
+}
+
+.window {
+  flex: 1;
+  height: 95vh;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 3px 4px 5px 4px rgba(0, 0, 0, 0.6);
+}
+
+.window,
+#editor {
+  background-color: $window;
+  border-radius: 10px;
+}
+
+#editor {
+  height: 100%;
+  width: 100%;
+  resize: none;
+  border: none;
+  outline: none;
+}
+
+#preview {
+  overflow-y: auto;
+}
+
+.title-bar {
+  text-align: center;
+  padding: 5px;
+  border: 2px solid black;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  font-family: $font-title;
+  font-size: 20px;
+  font-weight: bold;
+  letter-spacing: 1.5px;
+  background: $window-title-bar;
+}
+
+#editor,
+#preview {
+  padding: 5px;
+  font-family: $font-text;
+
+}
+
+pre,
+code {
+  background-color: white;
+}
+
+blockquote {
+  border-left: 4px solid #ccc;
+  padding-left: 16px;
+  margin-left: 10px;
+  color: #555;
+}
+
+table,
+th,
+td {
+  border: 1px solid black;
+  border-collapse: collapse;
+  padding: 3px;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+@media (max-width: 768px) {
+  body {
+    flex-direction: column;
+    height: 100vh;
+    margin: 0;
+  }
+
+  .window {
+    flex: 1 1 auto;
+    height: auto;
+    margin: 5px 10px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  #editor {
+    flex-grow: 1;
+    min-height: 200px;
+    resize: none;
+  }
+
+  #preview {
+    flex-grow: 1;
+    overflow-y: auto;
+  }
+
+  .title-bar {
+    font-size: 16px;
+    padding: 3px;
+  }
+
+  #editor,
+  #preview {
+    font-size: 14px;
+  }
+}
