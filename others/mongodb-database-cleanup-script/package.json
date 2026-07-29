@@ -1,0 +1,16 @@
+{
+  "name": "mongodb-database-cleanup-script",
+  "version": "1.0.0",
+  "description": "Script to clean up selected databases in MongoDB",
+  "main": "cleanup.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node cleanup.js"
+  },
+  "author": "Georgi K.",
+  "license": "MIT",
+  "dependencies": {
+    "dotenv": "^16.5.0",
+    "mongoose": "^8.15.1"
+  }
+}
