@@ -1,0 +1,137 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --main-bg-color: #708D81;
+  --main-elm-color: #F4D58D;
+  --secondary-elm-color: #BF0603;
+}
+
+html {
+  background: var(--main-bg-color);
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+main {
+  width: 100%;
+  min-height: 100vh;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 20px;
+}
+
+h1 {
+  color: #FFFFFF;
+  max-width: 450px;
+  width: 100%;
+  text-align: center;
+  text-shadow: 1px 1px 2px #001427;
+  font-size: clamp(1.5rem, 4vw, 2.5rem);
+  margin-bottom: 20px;
+}
+
+section {
+  padding: 20px;
+  margin: 15px;
+  max-width: 450px;
+  width: 100%;
+}
+
+#check-section {
+  background: #FFFFFF;
+  border-radius: 8px;
+}
+
+#check-section p {
+  margin-bottom: 25px;
+  text-align: center;
+  font-size: clamp(0.9rem, 2.5vw, 1rem);
+}
+
+label {
+  display: none;
+}
+
+.input-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center;
+  align-items: center;
+}
+
+input {
+  border-radius: 0;
+  border: none;
+  border-bottom: 2px solid var(--main-elm-color);
+  min-width: 200px;
+  flex: 1;
+  font-size: clamp(16px, 4vw, 20px);
+  text-align: center;
+  padding: 8px;
+}
+
+button {
+  background: var(--main-elm-color);
+  padding: 10px 20px;
+  border: 1px solid var(--main-elm-color);
+  font-weight: bold;
+  cursor: pointer;
+  font-size: clamp(14px, 3vw, 16px);
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background: #E6C373;
+}
+
+#output {
+  margin-top: 20px;
+  text-align: center;
+  font-size: clamp(16px, 4vw, 20px);
+  word-wrap: break-word;
+}
+
+/* Mobile-first responsive design */
+@media (max-width: 480px) {
+  main {
+    padding: 15px;
+  }
+  
+  section {
+    padding: 15px;
+    margin: 10px 0;
+  }
+  
+  .input-container {
+    flex-direction: column;
+    align-items: stretch;
+  }
+  
+  input {
+    width: 100%;
+    margin-bottom: 10px;
+    min-width: unset;
+  }
+  
+  button {
+    width: 100%;
+    padding: 12px;
+  }
+}
+
+@media (max-width: 320px) {
+  h1 {
+    font-size: 1.3rem;
+  }
+  
+  section {
+    padding: 10px;
+  }
+}

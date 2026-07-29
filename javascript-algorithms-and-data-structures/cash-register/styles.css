@@ -1,0 +1,77 @@
+* {
+    margin: 5px;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: 'Cinzel Decorative', serif;
+    font-size: 20px;
+}
+
+:root {
+    --main-bg-color: #6A5ACD;
+    --main-elm-color: #FFD700;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: var(--main-bg-color);
+    color: #FFFFFF;
+}
+
+h1 {
+    color: var(--main-elm-color);
+    font-size: 40px;
+}
+
+section {
+    display: flex;
+}
+
+#customer-input {
+    display: flex;
+    flex-direction: column;
+}
+
+input {
+    border-radius: 3px;
+    border: none;
+    padding: 3px 0;
+}
+
+button {
+    cursor: pointer;
+    border-radius: 3px;
+    border: none;
+    padding: 5px 0;
+    background-color: var(--main-elm-color);
+    font-weight: bold;
+}
+
+#drawer {
+    display: flex;
+    flex-direction: column;
+}
+
+#total {
+    border-bottom: 1px solid;
+}
+
+#change-in-drawer {
+    font-weight: bold;
+    font-style: italic;
+}
+
+.no-styling {
+    font-weight: initial;
+    font-style: initial;
+}
+
+.status {
+    color: var(--main-elm-color);
+}

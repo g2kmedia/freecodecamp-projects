@@ -1,0 +1,126 @@
+* {
+    margin: 5px;
+    padding: 0;
+}
+
+/* colors for the pokemon types */
+:root {
+    --normal: #F5F5DC;
+    --fighting: #FF0000;
+    --flying: #87CEEB;
+    --poison: #800080;
+    --ground: #A52A2A;
+    --rock: #808080;
+    --bug: #008000;
+    --ghost: #E6E6FA;
+    --steel: #C0C0C0;
+    --fire: #FF4500;
+    --water: #0000FF;
+    --grass: #008000;
+    --electric: #FFFF00;
+    --psychic: #9370DB;
+    --ice: #ADD8E6;
+    --dragon: #4B0082;
+    --dark: #A9A9A9;
+    --fairy: #FFC0CB;
+    --stellar: #002366;
+    --unknown: #800080;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f5f5f5;
+}
+
+h1 {
+    text-align: center;
+}
+
+.search {
+    width: 310px;
+    height: 60px;
+    background-color: #ffffff;
+    border: 2px solid #000000;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: center;
+}
+
+button,
+input {
+    padding: 5px;
+}
+
+#pokemon-card {
+    width: 310px;
+    height: 430px;
+    background-color: #ffffff;
+    border: 2px solid #000000;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 0 20px 20px 20px;
+}
+
+.pokemon-name-id {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #ffffff;
+    border: 2px solid #000000;
+    border-radius: 10px;
+}
+
+#pokemon-name {
+    font-weight: bold;
+    background: #ffffff;
+}
+
+#pokemon-id {
+    font-style: italic;
+}
+
+#pokemon-image {
+    display: flex;
+    justify-content: center;
+    border: 2px solid black;
+    background: #ffffff;
+    margin-bottom: 0;
+    font-size: 18px;
+    text-align: center;
+}
+
+#pokemon-sprite img {
+    height: 150px;
+}
+
+.pokemon-stats {
+    margin-top: 10px;
+    background: #ffffff;
+    border: 2px solid black;
+}
+
+.pokemon-stats ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.pokemon-stats li {
+    font-size: 18px;
+    margin-bottom: 5px;
+}
+
+#types {
+    display: flex;
+    justify-content: center;
+}
+
+#types>span {
+    border: 2px solid black;
+    border-radius: 10px;
+    background: #ffffff;
+    padding: 5px 20px;
+}

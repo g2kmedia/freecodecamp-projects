@@ -1,0 +1,102 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  background: #2EC4B6;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+main {
+  width: 100%;
+  min-height: 100vh;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 20px 0;
+}
+
+main * {
+  border-radius: 10px;
+}
+
+h1 {
+  color: #FFFFFF;
+  max-width: 90vw;
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+section {
+  padding: 20px 5vw;
+  margin: 15px 0;
+  width: 100%;
+  max-width: 450px;
+  box-sizing: border-box;
+}
+
+#check-section {
+  background: #FFFFFF;
+}
+
+#check-section p {
+  margin-bottom: 25px;
+  text-align: center;
+}
+
+input {
+  border-radius: 0;
+  border: none;
+  border-bottom: 2px solid #2EC4B6;
+  width: 60%;
+  font-size: 1.1rem;
+  text-align: center;
+  padding: 8px 5px;
+  margin-bottom: 10px;
+}
+
+button {
+  background: #CBF3F0;
+  padding: 7px 25px;
+  margin-left: 10px;
+  border: 1px solid #CBF3F0 ;
+  font-weight: bold;
+  font-size: 1rem;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+#result {
+  margin-top: 20px;
+  text-align: center;
+  font-size: 1.2rem;
+}
+
+#explanation-section {
+  background: #FFBF69;
+}
+
+/* Responsive styles */
+@media (max-width: 600px) {
+  h1, section {
+    max-width: 98vw;
+    width: 98vw;
+    padding: 15px 2vw;
+  }
+
+  input, button {
+    width: 100%;
+    margin: 8px 0 0 0;
+    font-size: 1rem;
+    display: block;
+  }
+
+  #check-section p {
+    font-size: 1rem;
+  }
+}

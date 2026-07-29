@@ -1,0 +1,85 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --main-bg-color: #106B9F;
+  --main-elm-color: #fc8c41;
+}
+
+html {
+ background: var(--main-bg-color);
+ font-family: Geneva, Tahoma, sans-serif;
+ font-size: 20px;
+}
+
+main {
+  width: 100%;
+  min-height: 100vh;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+h1 {
+  text-align: center;
+  color: white;
+  margin-bottom: 25px;
+}
+
+#phone-body {
+  width: 300px;
+  height: 600px;
+  background-color: black;
+  border-radius: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+#phone-screen {
+  width: 95%;
+  height: 95%;
+  margin: 10px;
+  border-radius: 10px;
+  background: rgb(83,228,238);
+  background: linear-gradient(198deg, rgba(83,228,238,1) 0%, rgba(67,160,207,1) 100%);
+}
+
+#phone-screen-contents {
+  position: absolute;
+  top: 350px;
+  text-align: center;
+}
+
+input {
+  font-size: 20px;
+  margin-top: 5px;
+}
+
+#results-div {
+  postion: relative;
+  margin-top: 20px;
+  max-width: 280px;
+}
+
+#phone-buttons {
+  margin: 0px 0px 5px 0px;
+}
+
+button {
+  background: var(--main-elm-color);
+  border: 1px solid var(--main-elm-color);
+  font-weight: bold;
+  margin: 0px 5px;
+  padding: 10px 30px;
+}
+
+button:hover {
+  cursor: pointer;
+}
